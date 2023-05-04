@@ -1,0 +1,28 @@
+{
+  "name": "project-3",
+  "version": "1.0.0",
+  "description": "## idea - Make a game website that has numerous classic games that you can pick from. - Tetris, Minesweeper, Hangman, Match game, Pong  - https://styled-components.com/docs - high scores - Create an account and login to view high score - leaderboard",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LemonDropping/project-3.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LemonDropping/project-3/issues"
+  },
+  "homepage": "https://github.com/LemonDropping/project-3#readme",
+  "dependencies": {
+    "apollo-server-express": "^3.12.0",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "graphql": "^16.6.0",
+    "graphql-tools": "^8.3.20",
+    "jsonwebtoken": "^9.0.0",
+    "mongoose": "^7.1.0"
+  }
+}
