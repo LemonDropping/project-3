@@ -2,7 +2,7 @@
 
 ## idea
 - Make a game website that has numerous classic games that you can pick from.
-- Tetris, Minesweeper, Hangman, Match game, Pong 
+- Tetris, Minesweeper, Hangman, Match game, Pong, snake, pac-man, 
 - https://styled-components.com/docs
 - high scores
 - Create an account and login to view high score
