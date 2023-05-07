@@ -1,14 +1,12 @@
-import React from 'react';
-import Pong from './Games/Pong/Pong';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import Pong from './components/Games/Pong/Pong';
 
-function App() {
-  return (
-    <div>
-      <h1>Classic Pong Game</h1>
-      <Pong />
-      {/* Other components and elements */}
-    </div>
-  );
-}
-
-export default App;
+// Inside your main component
+return (
+  <Router>
+    <Switch>
+      {/* Other routes */}
+      <Route exact path="/pong" component={Pong} />
+    </Switch>
+  </Router>
+);
