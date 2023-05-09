@@ -9,7 +9,7 @@ const NavigationBar = ({ title, links, image, icon, button, }: NavbarInterface) 
             {icon && <div className={styles.icon}>{<NavLogo />}</div>}
             <div className={styles.title}>{title}</div>
             <ul className={styles.links}>
-                {links.map((link) => (
+                {links && links.map((link) => (
                     <li key={link.to}>
                         <Link to={link.to}>{link.text}</Link>
                     </li>
