@@ -1,29 +1,33 @@
 {
-  "name": "project-3",
-  "version": "1.0.0",
-  "description": "## idea - Make a game website that has numerous classic games that you can pick from. - Tetris, Minesweeper, Hangman, Match game, Pong  - https://styled-components.com/docs - high scores - Create an account and login to view high score - leaderboard",
-  "main": "index.js",
+  "name": "hangman",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/LemonDropping/project-3.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/LemonDropping/project-3/issues"
-  },
-  "homepage": "https://github.com/LemonDropping/project-3#readme",
   "dependencies": {
-    "apollo-server-express": "^3.12.0",
+    "@heroicons/react": "^2.0.17",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "classnames": "^2.3.2",
-    "dotenv": "^16.0.3",
-    "express": "^4.18.2",
-    "graphql": "^16.6.0",
-    "graphql-tools": "^8.3.20",
-    "jsonwebtoken": "^9.0.0",
-    "mongoose": "^7.1.0"
+    "react-router-dom": "^6.11.1",
+    "styled-components": "^5.3.10"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.28",
+    "@types/react-dom": "^18.0.11",
+    "@types/styled-components": "^5.1.26",
+    "@typescript-eslint/eslint-plugin": "^5.57.1",
+    "@typescript-eslint/parser": "^5.57.1",
+    "@vitejs/plugin-react": "^4.0.0",
+    "eslint": "^8.38.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.3.4",
+    "typescript": "^5.0.2",
+    "vite": "^4.3.2"
   }
 }

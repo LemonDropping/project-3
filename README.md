@@ -20,3 +20,6 @@
 - start small, then add more once you have a small setup
 - make sure everything is working before you add anything more
 - create a problem, create a story and create a solution
+
+## To-Do
+- create footer for webpage.
