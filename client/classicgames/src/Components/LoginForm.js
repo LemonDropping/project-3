@@ -23,7 +23,6 @@ const LoginForm = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
     console.log(`Username: ${username}, Password: ${password}`);
-    // add logic to validate credentials and log user in
   };
 
   return (
