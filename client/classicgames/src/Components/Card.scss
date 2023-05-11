@@ -8,6 +8,7 @@
     height: 100%;
   
     header {
+      padding-top: 40px;
       position: relative;
       width: 100%;
       text-align: center;
@@ -44,7 +45,8 @@
     }
   
     .container {
-      border: 1px solid #DEDEDE;
+      border: 1px solid #5f6c48;
+      border-radius: 2px;
       padding: 12px;
       box-shadow: 0 0 4px 4px #DEDEDE; 
       display: grid;
