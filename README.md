@@ -1,25 +1,21 @@
-# project-3
+# :video_game: Retro Arcadia :video_game:
 
-## idea
-- Make a game website that has numerous classic games that you can pick from.
-- Tetris, Minesweeper, Hangman, Match game, Pong, snake, pac-man, 
-- https://styled-components.com/docs
-- high scores
-- Create an account and login to view high score
-- leaderboard
+This is a group project developed with React that showcases a collection of 5 classic arcade games: Tic-Tac-Toe, Pong, Memory, Rock, Paper, Scissors, and Tetris. Each game has been developed to be true to its original gameplay and retro design, providing players with a nostalgic gaming experience. Create an account, login and track your scores on the leaderboard!
 
-# evaluated by
-- concept
-- design
-- functionality
-- presentation
-- collaboration
-- repo quality 
+## Table of Contents
 
-# advice 
-- start small, then add more once you have a small setup
-- make sure everything is working before you add anything more
-- create a problem, create a story and create a solution
+- [Installation](#Installation)
+- [Wire Frame](#WireFrame)
+- [Digital Mockup](#DigitalMockup)
+- [Deployed link](#deployed-link)
+- [Contributions](#contributions)
 
-## To-Do
-- create footer for webpage.
+## Installation
+
+## Wire Frame
+
+## Digital Mockup
+
+## Deployed Link
+
+## Contributions
