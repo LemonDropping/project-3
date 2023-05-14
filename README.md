@@ -7,8 +7,8 @@ This is a group project developed with React that showcases a collection of 5 cl
     <img src="https://img.shields.io/badge/express-orange" />
     <img src="https://img.shields.io/badge/MongoDB-blue"  />
     <img src="https://img.shields.io/badge/mongoose-red"  />
-    <img src="https://img.shields.io/badge/moment-blue"  />
-    <img src="https://img.shields.io/badge/nodemon-green" />
+    <img src="https://img.shields.io/badge/styled-component-blue"  />
+    <img src="https://img.shields.io/badge/typescript-green" />
 </p>
 
 ## Table of Contents
