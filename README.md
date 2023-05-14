@@ -19,13 +19,23 @@ This is a group project developed with React that showcases a collection of 5 cl
 - [Deployed link](#deployed-link)
 - [Contributions](#contributions)
 
-## Installation
+## Installation 💾
+
+`npm install`
 
 ## Wire Frame
+
 <img width="527" alt="image" src="https://github.com/LemonDropping/project-3/assets/118090944/f7eac16e-38ba-4d29-acbc-cb6e82bb72d0">
 
 ## Digital Mockup
 
 ## Deployed Link
 
-## Contributions
+Coming soon...
+
+## Contributions :trophy:
+
+Scott Malone - github.com/scostemal
+Christopher Gonzalez - github.com/chrisjg19
+Cole Roberts - github.com/LemonDropping
+Nicole Pendarvis - github.com/Pendarvis5
