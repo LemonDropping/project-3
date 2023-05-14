@@ -1,25 +1,41 @@
-# project-3
+# :video_game: Retro Arcadia :video_game:
 
-## idea
-- Make a game website that has numerous classic games that you can pick from.
-- Tetris, Minesweeper, Hangman, Match game, Pong, snake, pac-man, 
-- https://styled-components.com/docs
-- high scores
-- Create an account and login to view high score
-- leaderboard
+This is a group project developed with React that showcases a collection of 5 classic arcade games: Tic-Tac-Toe, Pong, Memory, Rock, Paper, Scissors, and Tetris. Each game has been developed to be true to its original gameplay and retro design, providing players with a nostalgic gaming experience. Create an account, login and track your scores on the leaderboard!
 
-# evaluated by
-- concept
-- design
-- functionality
-- presentation
-- collaboration
-- repo quality 
+<p align="center">
+    <img src="https://img.shields.io/badge/javascript-yellow" />
+    <img src="https://img.shields.io/badge/express-orange" />
+    <img src="https://img.shields.io/badge/MongoDB-blue"  />
+    <img src="https://img.shields.io/badge/mongoose-red"  />
+    <img src="https://img.shields.io/badge/styled-component-blue"  />
+    <img src="https://img.shields.io/badge/typescript-green" />
+</p>
 
-# advice 
-- start small, then add more once you have a small setup
-- make sure everything is working before you add anything more
-- create a problem, create a story and create a solution
+## Table of Contents
 
-## To-Do
-- create footer for webpage.
+- [Installation](#Installation)
+- [Wire Frame](#WireFrame)
+- [Digital Mockup](#DigitalMockup)
+- [Deployed link](#deployed-link)
+- [Contributions](#contributions)
+
+## Installation 💾
+
+`npm install`
+
+## Wire Frame
+
+<img width="527" alt="image" src="https://github.com/LemonDropping/project-3/assets/118090944/f7eac16e-38ba-4d29-acbc-cb6e82bb72d0">
+
+## Digital Mockup
+
+## Deployed Link
+
+Coming soon...
+
+## Contributions :trophy:
+
+Scott Malone - github.com/scostemal
+Christopher Gonzalez - github.com/chrisjg19
+Cole Roberts - github.com/LemonDropping
+Nicole Pendarvis - github.com/Pendarvis5
