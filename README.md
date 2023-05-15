@@ -1,4 +1,4 @@
-# :video_game: Retro Arcadia :video_game:
+# :video_game: Classic Game Mania :video_game:
 
 This is a group project developed with React that showcases a collection of 5 classic arcade games: Tic-Tac-Toe, Pong, Memory, Rock, Paper, Scissors, and Tetris. Each game has been developed to be true to its original gameplay and retro design, providing players with a nostalgic gaming experience. Create an account, login and track your scores on the leaderboard!
 
