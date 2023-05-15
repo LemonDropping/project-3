@@ -1,15 +1,23 @@
+
 const { AuthenticationError } = require('apollo-server-express');
-const User = require('../models/User');
-const { signToken } = require('../utils/auth');
+const User = require('../models/User')
+const signToken = require('../utils/auth')
 
 const resolvers = {
     Query: {
         users: async () => {
             return User.find();
         },
-        user: async (parent, { userName }) => {
-            return User.findOne({ userName });
-        },
+        user: async (parent,  {userName}, context, info) => {
+            // if(!context.user) {
+            //     throw new AuthenticationError("no good")
+            // }
+            // const {userName} = args;
+            console.log('username',  userName)
+            const result = await User.findOne({ userName })
+            console.log("findeone", result)
+            return result
+        }
     },
 
     Mutation: {
