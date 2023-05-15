@@ -1,7 +1,10 @@
+import React, { useState} from 'react';
+import { useMutation } from '@apollo/client';
 import { SignUpFormInterface } from '../../types';
 import styles from './SignUpForm.module.css';
 import FormInput from '../../components/UI/Form/FormInput';
 import FormButton from '../../components/UI/Form/FormButton';
+import  { ADD_USER }  from '../../utils/mutations';
 
 const SignUpPage = ({
   firstName,
@@ -9,13 +12,46 @@ const SignUpPage = ({
   userName,
   email,
   password,
-  confirmPassword,
-  onSubmit,
+//   confirmPassword,
+//   onSubmit,
   btn
 }: SignUpFormInterface) => {
+    const [addUser] = useMutation(ADD_USER);
+    const [formData, setFormData] = useState({
+        firstName: firstName || '',
+        lastName: lastName || '',
+        userName: userName || '',
+        email: email || '',
+        password: password || '',
+    });
+
+    const handleSubmit = async (e:React.FormEvent<HTMLFormElement>) => {
+        e.preventDefault();
+
+        const variables = {
+            firstName: firstName,
+            lastName: lastName,
+            userName: userName,
+            email: email,
+            password: password,
+        };
+
+        try {
+            const { data } = await addUser({ variables });
+            console.log('User added', data);
+        } catch (error) {
+            console.log('Error adding user', error);
+        }
+
+    };
+
+    const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+        setFormData({ ...formData, [e.target.id]: e.target.value});
+    };
+
   return (
     <div className={styles['signup-form']}>
-        <form onSubmit={onSubmit}>
+        <form onSubmit={handleSubmit}>
             <h1>Sign-Up</h1>
                 <p>Create an account to start seeing your scores on the leader board and be updated when new games are added to the site!</p>
                 <div className={styles['form-group']}>
@@ -25,7 +61,7 @@ const SignUpPage = ({
                         type="text"
                         value={firstName}
                         className="form-input"
-                        onChange={(e) => console.log(e.target.value)}
+                        onChange={handleChange}
                         placeholder="First Name"
                     />
                     <FormInput
@@ -34,7 +70,7 @@ const SignUpPage = ({
                         type="text"
                         value={lastName}
                         className="form-input"
-                        onChange={(e) => console.log(e.target.value)}
+                        onChange={handleChange}
                         placeholder="Last Name"
                     />
                     <FormInput
@@ -43,7 +79,7 @@ const SignUpPage = ({
                         type="text"
                         value={userName}
                         className="form-input"
-                        onChange={(e) => console.log(e.target.value)}
+                        onChange={handleChange}
                         placeholder="Username"
                     />
                     <FormInput
@@ -52,7 +88,7 @@ const SignUpPage = ({
                         type="email"
                         value={email}
                         className="form-input"
-                        onChange={(e) => console.log(e.target.value)}
+                        onChange={handleChange}
                         placeholder="Email"
                     />
                     <FormInput
@@ -61,18 +97,18 @@ const SignUpPage = ({
                         type="password"
                         value={password}
                         className="form-input"
-                        onChange={(e) => console.log(e.target.value)}
+                        onChange={handleChange}
                         placeholder="Password"
                     />
-                    <FormInput
+                    {/* <FormInput
                         id="confirmPassword"
                         label="Confirm Password"
                         type="password"
                         value={confirmPassword}
                         className="form-input"
-                        onChange={(e) => console.log(e.target.value)}
+                        onChange={handleChange}
                         placeholder="Confirm Password"
-                    />
+                    /> */}
                 </div>
                 
                     <FormButton
