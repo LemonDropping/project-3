@@ -1,0 +1,60 @@
+/* .App {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+.center {
+    text-align: center;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .player {
+    margin: 10px;
+    width: 120px;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--primary-text);
+    color: var(--primary-text);
+  }
+  
+  .score {
+    padding: 1px;
+    font-size: small;
+    font-weight: bold;
+    background-color: var(--primary-dark);
+  }
+  
+  .action {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    color: var(--primary);
+  }
+  
+  .round-btn {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    margin: 2px;
+    cursor: pointer;
+    background-color: var(--primary-dark);
+    color: var(--primary-text);
+  }
+  
+  .round-btn:hover {
+    background-color: var(--primary-light);
+  }

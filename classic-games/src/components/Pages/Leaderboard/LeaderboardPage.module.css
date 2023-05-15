@@ -1,0 +1,38 @@
+.leaderboardTable {
+  border-collapse: collapse;
+  margin: auto;
+  /* flex: 1 1 600px; */
+  width: 60%;
+  /* max-width: var(--content); */
+  background-color: hsl(var(--bkg));
+  padding: var(--space-md);
+  border-radius: var(--round-lg);
+  
+ 
+}
+
+th, td {
+  text-align: center;
+  padding: 1rem;
+  color: rgb(207, 204, 2);
+  text-transform: uppercase;
+  
+}
+
+th {
+  font-size: 2.5rem;
+  text-decoration: underline #ffa500;
+  
+}
+
+td {
+  border-bottom: 2px solid orange;
+  font-size: 1.5rem;
+}
+
+@media only screen and (max-width: 600px) {
+  table {
+    font-size: 0.8rem;
+    width: 100%;
+  }
+}

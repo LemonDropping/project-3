@@ -1,0 +1,69 @@
+
+{
+    "headerImage": {
+        "bannerImage": "https://source.unsplash.com/random",
+        "bannerPath": "/",
+        "bannerText": "Header Banner Image",
+        "bannerButton": {
+            "buttonText": "BannerButtonTextHere!",
+            "buttonPath": "/"
+        },
+        "bannerBadge": {
+            "badgeText": "New!",
+            "filled": true,
+            "badgeIcon": {
+                "icon": "<MoonIcon />",
+                "iconPath": "/"
+            }
+        },
+        "bannerIcon": {
+            "icon": "<ComputerDesktopIcon />",
+            "iconPath": "/"
+        }
+    },
+    "headerButton": {
+        "buttonText": "Button",
+        "buttonType": "primary",
+        "buttonPath": "/button"
+    },
+    "headerIcon": {
+        "icon": "<StarIcon />",
+        "iconPath": "/"
+    },
+    "headerBadge": {
+        "badgeText": "5",
+        "filled": false,
+        "badgePath": "/",
+        "badgeIcon": {
+            "icon": "<MoonIcon />",
+            "iconPath": "/"
+        }
+    },
+    "navbarLinks": [
+        {
+            "linkPath": "/home",
+            "linkText": "Home"
+        },
+        {
+            "linkPath": "/games",
+            "linkText": "Games"
+        },
+        {
+            "linkPath": "/leaderboard",
+            "linkText": "Leaderboard"
+        },
+        {
+            "linkPath": "/signup",
+            "linkText": "Sign Up"
+        }
+    ],
+    "navbarText": "Classic Games",
+    "navBarIcon": {
+        "icon": "<MoonIcon />",
+        "iconPath": "/"
+    },
+    "navbarButton": {
+        "buttonText": "Navbar Button",
+        "buttonPath": "/"
+    }
+}
