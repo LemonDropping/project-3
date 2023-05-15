@@ -1,14 +1,32 @@
-import React from 'react';
-import Pong from './Games/Pong/Pong';
+import React, { useEffect } from 'react';
+import './App.css';
+import Paddle from './Games/Pong/components/Paddle';
+import Ball from './Games/Pong/components/Ball';
+import usePongGame from './usePongGame';
 
-function App() {
+const App = () => {
+  const { paddleA, paddleB, ball, movePaddleA, movePaddleB } = usePongGame();
+
+  useEffect(() => {
+    const handleKeyDown = (e) => {
+      if (e.key === 'w' || e.key === 's') {
+        movePaddleA(paddleA.y + (e.key === 's' ? 20 : -20));
+      } else if (e.key === 'ArrowUp' || e.key === 'ArrowDown') {
+        movePaddleB(paddleB.y + (e.key === 'ArrowDown' ? 20 : -20));
+      }
+    };
+
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, [paddleA, movePaddleA, movePaddleB]);
+
   return (
-    <div>
-      <h1>Classic Pong Game</h1>
-      <Pong />
-      {/* Other components and elements */}
+    <div className="App" style={{ position: 'relative', width: 600, height: 400, backgroundColor: 'black' }}>
+      <Paddle style={{ left: 10, top: paddleA.y }} />
+      <Paddle style={{ right: 10, top: paddleB.y }} />
+      <Ball style={{ left: ball.x, top: ball.y }} />
     </div>
   );
-}
+};
 
-export default App;
+export default App

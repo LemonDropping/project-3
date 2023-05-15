@@ -11,6 +11,7 @@ import GamesPage from './Pages/Games/GamesPage';
 import './index.css'
 import SignUpPage from './Pages/SignUp/SignUpPage';
 import LoginPage from './Pages/LogIn/LoginPage';
+import GameBoard from './components/GameBoard';
 
 function App() {
 
