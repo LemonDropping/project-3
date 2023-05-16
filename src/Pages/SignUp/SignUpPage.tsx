@@ -29,11 +29,11 @@ const SignUpPage = ({
         e.preventDefault();
 
         const variables = {
-            firstName: firstName,
-            lastName: lastName,
-            userName: userName,
-            email: email,
-            password: password,
+            firstName: formData.firstName,
+            lastName: formData.lastName,
+            userName: formData.userName,
+            email: formData.email,
+            password: formData.password,
         };
 
         try {
@@ -59,7 +59,7 @@ const SignUpPage = ({
                         id="firstName"
                         label="First Name"
                         type="text"
-                        value={firstName}
+                        value={formData.firstName}
                         className="form-input"
                         onChange={handleChange}
                         placeholder="First Name"
@@ -68,7 +68,7 @@ const SignUpPage = ({
                         id="lastName"
                         label="Last Name"
                         type="text"
-                        value={lastName}
+                        value={formData.lastName}
                         className="form-input"
                         onChange={handleChange}
                         placeholder="Last Name"
@@ -77,7 +77,7 @@ const SignUpPage = ({
                         id="userName"
                         label="Username"
                         type="text"
-                        value={userName}
+                        value={formData.userName}
                         className="form-input"
                         onChange={handleChange}
                         placeholder="Username"
@@ -86,7 +86,7 @@ const SignUpPage = ({
                         id="email"
                         label="Email"
                         type="email"
-                        value={email}
+                        value={formData.email}
                         className="form-input"
                         onChange={handleChange}
                         placeholder="Email"
@@ -95,7 +95,7 @@ const SignUpPage = ({
                         id="password"
                         label="Password"
                         type="password"
-                        value={password}
+                        value={formData.password}
                         className="form-input"
                         onChange={handleChange}
                         placeholder="Password"

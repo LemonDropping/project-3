@@ -39,6 +39,7 @@ export interface NavbarInterface {
     button?: {
         text: string;
         to: string;
+        onClick?: () => void;
     }
 }
 
@@ -53,6 +54,7 @@ export interface NavbarInterface {
     className: string;
     onSubmit: () => void;
     btn: FormButtonInterface;
+    
 }
 
 export interface FormButtonInterface {

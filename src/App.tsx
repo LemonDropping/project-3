@@ -47,7 +47,10 @@ function App() {
         title="Classic Games"
         icon={{ text: "Icon Text", to: "/", icon: <ComputerDesktopIcon />, className: "icon-class" }}
         links={links}
-        button={{ text: isLoggedIn ? "Logout" : "Login", to: isLoggedIn ? "/" : "/login"  }}
+        button={{ text: isLoggedIn ? "Logout" : "Login",
+                  to: isLoggedIn ? "/" : "/login",
+                  onClick: isLoggedIn ? handleLogout : handleLogin  }}
+        
         // image="#"
         />
         <Routes>
