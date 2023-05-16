@@ -29,13 +29,17 @@ This is a group project developed with React that showcases a collection of 5 cl
 
 ## Digital Mockup
 
+<img width="223" alt="image" src="https://github.com/LemonDropping/project-3/assets/118090944/e2b4117c-0569-48fb-9e8d-dc0eb608e107">
+<img width="467" alt="image" src="https://github.com/LemonDropping/project-3/assets/118090944/d5efe86a-bdc3-478b-b0fc-9cfbdb899267">
+
+
 ## Deployed Link
 
 Coming soon...
 
 ## Contributions :trophy:
 
-Scott Malone - github.com/scostemal
-Christopher Gonzalez - github.com/chrisjg19
-Cole Roberts - github.com/LemonDropping
-Nicole Pendarvis - github.com/Pendarvis5
+Scott Malone - [github.com/scostemal](github.com/scostemal)
+Christopher Gonzalez - [github.com/chrisjg19](github.com/chrisjg19)
+Cole Roberts - [github.com/LemonDropping](github.com/LemonDropping)
+Nicole Pendarvis - [github.com/Pendarvis5](github.com/Pendarvis5)
