@@ -94,7 +94,7 @@ function GamesPage() {
         "
         title='Memory'
         // subtitle="Created by Alexey Pajitnov. 1984."
-        image="/images/"
+        image="/images/matchgame (1).png"
         badge={{
           text:"Classic Game",
           filled: false,
